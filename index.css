@@ -199,10 +199,10 @@ footer a {
   text-align: center;
 }*/
 
+
 .button {
   font-size: 1em;
   padding: 10px;
-  left: 50%;
   color: #fff;
   border: 2px solid #06D85F;
   border-radius: 20px/50px;
@@ -274,4 +274,7 @@ footer a {
     width: 70%;
   }
 }
+
+
+
 

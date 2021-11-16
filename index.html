@@ -1,33 +1,33 @@
 <html>
 
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<title>Profile Card</title>
-		<link rel="stylesheet" href="index.css">
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-		<script type="text/javascript">
-			window.onload = function () {
-				var images =[]
-				for(var i=1;i<=17;i++){
-					images.push('photos/'+i+'.jpg');
-				}
-				console.log(images);
-				var image = images[Math.floor(Math.random() * images.length)];
-				document.getElementsByTagName('body')[0].style.backgroundImage = "url('" + image + "')";
-				document.getElementsByTagName('body')[0].style.backgroundRepeat = "no-repeat";
-				document.getElementsByTagName('body')[0].style.backgroundSize = "cover";
+<head>
+	<title>Profile Card</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="index.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<script type="text/javascript">
+		window.onload = function () {
+			var images = []
+			for (var i = 1; i <= 17; i++) {
+				images.push('photos/' + i + '.jpg');
 			}
-		</script>
-	</head>
+			console.log(images);
+			var image = images[Math.floor(Math.random() * images.length)];
+			document.getElementsByTagName('body')[0].style.backgroundImage = "url('" + image + "')";
+			document.getElementsByTagName('body')[0].style.backgroundRepeat = "no-repeat";
+			document.getElementsByTagName('body')[0].style.backgroundSize = "cover";
+		}
+	</script>
+</head>
 
-	<body>
-		<div class="card-container">
-			<img class="round" src="PoojithRachakada.jpg" alt="user" />
-			<h3>Poojith Reddy Rachakada</h3>
-			<h6>Hyderabad</h6>
-			<p>SAP MDG Developer</p>
-			<div class="buttons">
-				<!--<button class="primary">
+<body>
+	<div class="card-container">
+		<img class="round" src="PoojithRachakada.jpg" alt="user" />
+		<h3>Poojith Reddy Rachakada</h3>
+		<h6>Hyderabad</h6>
+		<p>SAP MDG Developer</p>
+		<div class="buttons">
+			<!--<button class="primary">
 				Message
 			</button>
 			<button class="primary ghost">
@@ -37,7 +37,7 @@
 			<div class="box">
 				<a class="button" href="#popup1">Contact Details</a>
 			</div>
-			
+
 			<div id="popup1" class="overlay">
 				<div class="popup">
 					<h2>Contact Details</h2>
@@ -45,12 +45,16 @@
 					<div class="content">
 						<table class="contact_table">
 							<tr>
-								<td><p>Email</p></td>
+								<td>
+									<p>Email</p>
+								</td>
 								<td>:</td>
 								<td>poojith.rachakada@gmail.com</td>
 							</tr>
 							<tr>
-								<td><p></p></td>
+								<td>
+									<p></p>
+								</td>
 								<td></td>
 								<td></td>
 							</tr>
@@ -68,35 +72,42 @@
 
 
 
-				<ul class="social-icons">
-					<li><a href="https://www.instagram.com/poojithrachakada"><i class="fa fa-instagram"></i></a></li>
-					<li><a href="https://www.facebook.com/poojithrachakada"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="https://www.linkedin.com/in/poojith-rachakada"><i class="fa fa-linkedin"></i></a></li>
-					<li><a href="https://github.com/PoojithRachakada"><i class="fa fa-github"></i></a></li>
-				</ul>
-			</div>
-			<div class="skills">
-				<h6>Skills</h6>
-				<ul>
-					<li>Python</li>
-					<li>SAP MDG</li>
-					<li>SAP ABAP</li>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>JavaScript</li>
-					<li>Java</li>
-					<li>C/C++</li>
-					<li>MySQL</li>
-					<li>PostgreSql</li>
-					<li>Oracle</li>
-				</ul>
-			</div>
+			<ul class="social-icons">
+				<li><a href="https://www.instagram.com/poojithrachakada"><i class="fa fa-instagram"></i></a></li>
+				<li><a href="https://www.facebook.com/poojithrachakada"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/poojith-rachakada"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="https://github.com/PoojithRachakada"><i class="fa fa-github"></i></a></li>
+			</ul>
 		</div>
-	</body>
+		<div>
+			<tr>
+				<td><button onclick="location.href='certifications.html'">Certifications</button></td>
+				<td><button onclick="location.href='Projects.html'">Projects</button></td>
+				<td><button onclick="location.href='Experience.html'">Experience</button></td>
+			</tr>
+		</div>
+		<div class="skills">
+			<h6>Skills</h6>
+			<ul>
+				<li>Python</li>
+				<li>SAP MDG</li>
+				<li>SAP ABAP</li>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>JavaScript</li>
+				<li>Java</li>
+				<li>C/C++</li>
+				<li>MySQL</li>
+				<li>PostgreSql</li>
+				<li>Oracle</li>
+			</ul>
+		</div>
+	</div>
+</body>
 
-	<footer>
-		<p><a href="https://poojithrachakada.github.io/tictactoe/tic.html">Tic Tac Toe</a></p>
-	</footer>
+<footer>
+	<p><a href="https://poojithrachakada.github.io/tictactoe/tic.html">Tic Tac Toe</a></p>
+</footer>
+
 
 </html>
-
