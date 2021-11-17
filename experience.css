@@ -49,6 +49,7 @@ header li {
 }
 
 header li a {
+    font-weight: bolder;
     color: blue;
     text-decoration: none;
 }
